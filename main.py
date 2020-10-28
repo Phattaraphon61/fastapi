@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message":"Hello TutLinks.com"}
+    return {"555555555555"}
 @app.get("/b2s/{text}")
 def bit2int(text:str):
     s = int(text[0])
