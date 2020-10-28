@@ -29,7 +29,7 @@ class rootFinding(BaseModel):
 
 @app.get("/")
 def home():
-    return {"555555555555"}
+    return {"8888"}
 @app.get("/b2s/{text}")
 def bit2int(text:str):
     s = int(text[0])
