@@ -1,9 +1,31 @@
 from fastapi import FastAPI
-
+from pydantic import BaseModel
+from numpy import sign
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 #domain where this api is hosted for example : localhost:5000/docs to see swagger documentation automagically generated.
+class eliminate(BaseModel):
+    A:list
+    b:list
 
+class interpolation(BaseModel):
+    x:int
+    xi:list
+    yi:list
+
+class differentiation(BaseModel):
+    h:float
+    p:int
+
+class integration(BaseModel):
+    a:int
+    b:int
+
+class rootFinding(BaseModel):
+    a:float
+    b:float
+    dx:float
 
 @app.get("/")
 def home():
