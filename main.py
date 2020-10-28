@@ -44,15 +44,13 @@ app = FastAPI() # FlaskApp()
 
 origins = [
     "*",
-    "http://localhost",
-    "http://localhost:80",
-    "http://localhost:8000",
-    "http://localhost:8000/b2s",
-    "http://localhost:8000/elimination",
-    "http://localhost:8000/interpolation",
-    "http://localhost:8000/differentiation",
-    "http://localhost:8000/integration",
-    "http://localhost:8000/root-finding"
+    "https://phattaraphon-commath.herokuapp.com",
+    "https://phattaraphon-commath.herokuapp.com/b2s",
+    "https://phattaraphon-commath.herokuapp.com/elimination",
+    "https://phattaraphon-commath.herokuapp.com/interpolation",
+    "https://phattaraphon-commath.herokuapp.com/differentiation",
+    "https://phattaraphon-commath.herokuapp.com/integration",
+    "https://phattaraphon-commath.herokuapp.com/root-finding"
 
 ]
 
