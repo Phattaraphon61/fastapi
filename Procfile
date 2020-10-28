@@ -1,1 +1,1 @@
-web: cd Back-end gunicorn -w 4 uvicorn.workers.UvicornWorker api:app
+web: gunicorn -w 4 uvicorn.workers.UvicornWorker api:app
