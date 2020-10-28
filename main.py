@@ -27,9 +27,30 @@ class rootFinding(BaseModel):
     b:float
     dx:float
 
+
+origins = [
+    "*",
+    "https://commath-phattaraphon.herokuapp.com",
+    "https://commath-phattaraphon.herokuapp.com/b2s",
+    "https://commath-phattaraphon.herokuapp.com/elimination",
+    "https://commath-phattaraphon.herokuapp.com/interpolation",
+    "https://commath-phattaraphon.herokuapp.com/differentiation",
+    "https://commath-phattaraphon.herokuapp.com/integration",
+    "https://commath-phattaraphon.herokuapp.com/root-finding"
+
+]
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.get("/")
 def home():
-    return {"999"}
+    return {"111111"}
 @app.get("/b2s/{text}")
 def bit2int(text:str):
     s = int(text[0])
