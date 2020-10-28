@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from numpy import sign
-from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 #domain where this api is hosted for example : localhost:5000/docs to see swagger documentation automagically generated.
